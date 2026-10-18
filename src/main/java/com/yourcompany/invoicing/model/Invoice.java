@@ -9,6 +9,14 @@ import com.yourcompany.invoicing.calculators.*;
 import lombok.*;
 
 @Entity @Getter @Setter
+
+@View(members=
+        "year, number, date;" +
+                "customer;" +
+                "details;" +
+                "remarks"
+)
+
 public class Invoice {
 
     @Id
@@ -31,6 +39,7 @@ public class Invoice {
     LocalDate date;
 
     @ManyToOne(fetch=FetchType.LAZY, optional=false)
+    @ReferenceView("Simple")
     Customer customer;
 
     @ElementCollection

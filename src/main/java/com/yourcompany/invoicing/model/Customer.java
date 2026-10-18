@@ -6,6 +6,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
+
+@View(name="Simple", members="number, name")
+
 public class Customer {
 
     @Id @Column(length=6)

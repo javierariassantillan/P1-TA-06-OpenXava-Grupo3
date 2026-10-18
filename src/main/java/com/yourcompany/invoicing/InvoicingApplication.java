@@ -15,7 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class InvoicingApplication extends OpenXavaApplication {
 
 	public static void main(String[] args) throws Exception {
-		DBServer.start("invoicing-db"); // To use your own database comment this line and configure src/main/resources/application.properties
+//		DBServer.start("invoicing-db"); // To use your own database comment this line and configure src/main/resources/application.properties
 		SpringApplication.run(InvoicingApplication.class, args);
 	}
 
