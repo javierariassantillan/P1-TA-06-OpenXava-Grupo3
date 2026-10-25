@@ -6,12 +6,7 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 @Entity @Getter @Setter
-public class Author {
-
-    @Id @GeneratedValue(strategy=GenerationType.UUID)
-    @Hidden
-    @Column(length=36)
-    String oid;
+public class Author extends Identifiable {
 
     @Column(length=50) @Required
     String name;

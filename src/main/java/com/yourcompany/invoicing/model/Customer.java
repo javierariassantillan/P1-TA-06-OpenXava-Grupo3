@@ -3,6 +3,7 @@ package com.yourcompany.invoicing.model;
 import jakarta.persistence.*;
 import org.openxava.annotations.*;
 import lombok.*;
+import com.yourcompany.invoicing.annotations.*;
 
 @Entity
 @Getter @Setter
@@ -19,4 +20,8 @@ public class Customer {
 
     @Embedded @NoFrame
     Address address;
+
+    @Column(length=10) @Cedula
+    String idNumber;
+
 }
