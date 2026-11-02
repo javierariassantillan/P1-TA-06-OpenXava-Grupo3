@@ -47,7 +47,7 @@ if (title == null) title = metaApplication.getLabel();
 <div class="ox-bottom-buttons">
 	<input type="hidden">
 	<a href="m/SignIn">
-	<input type="button" tabindex="1" value="<xava:label key='SignIn'/>">
+	<input type="button" tabindex="0" value="<xava:label key='SignIn'/>">
 	</a>
 </div>
 
